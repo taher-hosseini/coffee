@@ -43,7 +43,7 @@ export default function HeaderM({
                 {/* right hamburger icon */}
                 <FaBars className='h-6 w-6 cursor-pointer' onClick={openMenu}/>
                 <div
-                    className={`fixed top-0 bottom-0 right-0 max-h-screen w-64 bg-white dark:bg-zinc-700 px-4 pt-3 z-20 transition-transform duration-300 ease-in-out overflow-y-auto 
+                    className={`fixed top-0 bottom-0 right-0 max-h-screen w-64 bg-white dark:bg-zinc-700 px-4 pt-3 z-20 transition-transform duration-300 ease-in-out overflow-y-auto
                     ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
                 >
                     {/* top section */}
@@ -59,140 +59,6 @@ export default function HeaderM({
                         <FaXmark className='text-zinc-600 dark:text-white' onClick={closeAllMenu}/>
                     </div>
                     {/* body section */}
-                    <ul className='flex flex-col gap-y-6 text-base text-zinc-700 dark:text-white dark:border-white/10'>
-                        <li>
-                            <Link href='#' className='flex items-center w-fit gap-x-2'>
-                                <AiOutlineHome className='h-5 w-5'/>
-                                صفحه اصلی
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#' className='flex justify-between items-center' onClick={toggleSubMenu}>
-                                <div className='flex items-center w-fit gap-x-2'>
-                                    <RiShoppingBagLine className='h-5 w-5'/>
-                                    فروشگاه
-                                </div>
-                                <FaChevronDown className='h-5 w-5'/>
-                            </Link>
-                            <ul
-                                className={`overflow-hidden transition-all duration-500 ${
-                                    isSubMenuOpen
-                                        ? 'max-h-60 opacity-100 mt-3'
-                                        : 'max-h-0 opacity-0'
-                                } space-y-3 mr-7`}
-                            >
-                                <li>
-                                    قهوه ویژه
-                                </li>
-                                <li>
-                                    ویژه در سطح جهانی
-                                </li>
-                                <li>
-                                    قهوه درجه یک
-                                </li>
-                                <li>
-                                    ترکیبات تجاری
-                                </li>
-                                <li>
-                                    کپسول قهوه
-                                </li>
-                                <li>
-                                    قهوه زینو برزیلی
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <Link href='#' className='flex items-center w-fit gap-x-2'>
-                                <HiOutlineChatBubbleLeftEllipsis className='h-5 w-5'/>
-                                دیکشنری
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#' className='flex items-center w-fit gap-x-2'>
-                                <HiOutlineBriefcase className='h-5 w-5'/>
-                                درباره ما
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#' className='flex items-center w-fit gap-x-2'>
-                                <IoDocumentTextOutline className='h-5 w-5'/>
-                                بلاگ
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#' className='flex items-center w-fit gap-x-2'>
-                                <HiOutlinePhoneArrowUpRight className='h-5 w-5'/>
-                                تماس با ما
-                            </Link>
-                        </li>
-                    </ul>
-                    <ul className='flex flex-col gap-y-6 text-base text-zinc-700 dark:text-white dark:border-white/10'>
-                        <li>
-                            <Link href='#' className='flex items-center w-fit gap-x-2'>
-                                <AiOutlineHome className='h-5 w-5'/>
-                                صفحه اصلی
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#' className='flex justify-between items-center' onClick={toggleSubMenu}>
-                                <div className='flex items-center w-fit gap-x-2'>
-                                    <RiShoppingBagLine className='h-5 w-5'/>
-                                    فروشگاه
-                                </div>
-                                <FaChevronDown className='h-5 w-5'/>
-                            </Link>
-                            <ul
-                                className={`overflow-hidden transition-all duration-500 ${
-                                    isSubMenuOpen
-                                        ? 'max-h-60 opacity-100 mt-3'
-                                        : 'max-h-0 opacity-0'
-                                } space-y-3 mr-7`}
-                            >
-                                <li>
-                                    قهوه ویژه
-                                </li>
-                                <li>
-                                    ویژه در سطح جهانی
-                                </li>
-                                <li>
-                                    قهوه درجه یک
-                                </li>
-                                <li>
-                                    ترکیبات تجاری
-                                </li>
-                                <li>
-                                    کپسول قهوه
-                                </li>
-                                <li>
-                                    قهوه زینو برزیلی
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <Link href='#' className='flex items-center w-fit gap-x-2'>
-                                <HiOutlineChatBubbleLeftEllipsis className='h-5 w-5'/>
-                                دیکشنری
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#' className='flex items-center w-fit gap-x-2'>
-                                <HiOutlineBriefcase className='h-5 w-5'/>
-                                درباره ما
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#' className='flex items-center w-fit gap-x-2'>
-                                <IoDocumentTextOutline className='h-5 w-5'/>
-                                بلاگ
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#' className='flex items-center w-fit gap-x-2'>
-                                <HiOutlinePhoneArrowUpRight className='h-5 w-5'/>
-                                تماس با ما
-                            </Link>
-                        </li>
-                    </ul>
                     <ul className='flex flex-col gap-y-6 text-base text-zinc-700 dark:text-white dark:border-white/10'>
                         <li>
                             <Link href='#' className='flex items-center w-fit gap-x-2'>
@@ -295,7 +161,7 @@ export default function HeaderM({
                 {/* left cart icon */}
                 <HiOutlineShoppingCart className='h-6 w-6 cursor-pointer' onClick={openCartMenu}/>
                 <div
-                    className={`fixed top-0 -left-64 h-screen w-64 bg-white dark:bg-zinc-700 px-4 pt-3 z-20 transition-transform duration-300 ease-in-out 
+                    className={`fixed top-0 bottom-0 -left-64 h-screen w-64 bg-white dark:bg-zinc-700 px-4 pt-3 z-20 transition-transform duration-300 ease-in-out overflow-y-auto 
                     ${isCartMenuOpen ? 'translate-x-full' : 'translate-x-0'}`}>
 
                     <div
@@ -303,6 +169,76 @@ export default function HeaderM({
                         <FaXmark className='text-zinc-600 dark:text-white' onClick={closeAllMenu}/>
                         {/* icon */}
                         <h4 className='text-base text-zinc-700 dark:text-white'>سبد خرید</h4>
+                    </div>
+                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
+                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
+                        <div className='flex flex-col mb-6 mt-5'>
+                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
+                            <span className='text-base'>175,000
+                                <span className='text-xs pr-1'>تومان</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
+                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
+                        <div className='flex flex-col mb-6 mt-5'>
+                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
+                            <span className='text-base'>175,000
+                                <span className='text-xs pr-1'>تومان</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
+                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
+                        <div className='flex flex-col mb-6 mt-5'>
+                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
+                            <span className='text-base'>175,000
+                                <span className='text-xs pr-1'>تومان</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
+                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
+                        <div className='flex flex-col mb-6 mt-5'>
+                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
+                            <span className='text-base'>175,000
+                                <span className='text-xs pr-1'>تومان</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
+                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
+                        <div className='flex flex-col mb-6 mt-5'>
+                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
+                            <span className='text-base'>175,000
+                                <span className='text-xs pr-1'>تومان</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
+                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
+                        <div className='flex flex-col mb-6 mt-5'>
+                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
+                            <span className='text-base'>175,000
+                                <span className='text-xs pr-1'>تومان</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
+                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
+                        <div className='flex flex-col mb-6 mt-5'>
+                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
+                            <span className='text-base'>175,000
+                                <span className='text-xs pr-1'>تومان</span>
+                            </span>
+                        </div>
                     </div>
                     <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
                         <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
