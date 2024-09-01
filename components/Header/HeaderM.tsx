@@ -180,76 +180,7 @@ export default function HeaderM({
                             </span>
                         </div>
                     </div>
-                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
-                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
-                        <div className='flex flex-col mb-6 mt-5'>
-                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
-                            <span className='text-base'>175,000
-                                <span className='text-xs pr-1'>تومان</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
-                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
-                        <div className='flex flex-col mb-6 mt-5'>
-                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
-                            <span className='text-base'>175,000
-                                <span className='text-xs pr-1'>تومان</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
-                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
-                        <div className='flex flex-col mb-6 mt-5'>
-                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
-                            <span className='text-base'>175,000
-                                <span className='text-xs pr-1'>تومان</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
-                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
-                        <div className='flex flex-col mb-6 mt-5'>
-                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
-                            <span className='text-base'>175,000
-                                <span className='text-xs pr-1'>تومان</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
-                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
-                        <div className='flex flex-col mb-6 mt-5'>
-                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
-                            <span className='text-base'>175,000
-                                <span className='text-xs pr-1'>تومان</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
-                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
-                        <div className='flex flex-col mb-6 mt-5'>
-                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
-                            <span className='text-base'>175,000
-                                <span className='text-xs pr-1'>تومان</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
-                        <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
-                        <div className='flex flex-col mb-6 mt-5'>
-                            <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                            <span className='text-xs leading-6 tracking-tighter text-teal-600 dark:text-emerald-500'>14.500 تومان تخفیف</span>
-                            <span className='text-base'>175,000
-                                <span className='text-xs pr-1'>تومان</span>
-                            </span>
-                        </div>
-                    </div>
+
                 </div>
 
             </div>
