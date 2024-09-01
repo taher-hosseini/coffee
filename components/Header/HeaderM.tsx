@@ -126,6 +126,140 @@ export default function HeaderM({
                             </Link>
                         </li>
                     </ul>
+                    <ul className='flex flex-col gap-y-6 text-base text-zinc-700 dark:text-white dark:border-white/10'>
+                        <li>
+                            <Link href='#' className='flex items-center w-fit gap-x-2'>
+                                <AiOutlineHome className='h-5 w-5'/>
+                                صفحه اصلی
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#' className='flex justify-between items-center' onClick={toggleSubMenu}>
+                                <div className='flex items-center w-fit gap-x-2'>
+                                    <RiShoppingBagLine className='h-5 w-5'/>
+                                    فروشگاه
+                                </div>
+                                <FaChevronDown className='h-5 w-5'/>
+                            </Link>
+                            <ul
+                                className={`overflow-hidden transition-all duration-500 ${
+                                    isSubMenuOpen
+                                        ? 'max-h-60 opacity-100 mt-3'
+                                        : 'max-h-0 opacity-0'
+                                } space-y-3 mr-7`}
+                            >
+                                <li>
+                                    قهوه ویژه
+                                </li>
+                                <li>
+                                    ویژه در سطح جهانی
+                                </li>
+                                <li>
+                                    قهوه درجه یک
+                                </li>
+                                <li>
+                                    ترکیبات تجاری
+                                </li>
+                                <li>
+                                    کپسول قهوه
+                                </li>
+                                <li>
+                                    قهوه زینو برزیلی
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <Link href='#' className='flex items-center w-fit gap-x-2'>
+                                <HiOutlineChatBubbleLeftEllipsis className='h-5 w-5'/>
+                                دیکشنری
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#' className='flex items-center w-fit gap-x-2'>
+                                <HiOutlineBriefcase className='h-5 w-5'/>
+                                درباره ما
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#' className='flex items-center w-fit gap-x-2'>
+                                <IoDocumentTextOutline className='h-5 w-5'/>
+                                بلاگ
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#' className='flex items-center w-fit gap-x-2'>
+                                <HiOutlinePhoneArrowUpRight className='h-5 w-5'/>
+                                تماس با ما
+                            </Link>
+                        </li>
+                    </ul>
+                    <ul className='flex flex-col gap-y-6 text-base text-zinc-700 dark:text-white dark:border-white/10'>
+                        <li>
+                            <Link href='#' className='flex items-center w-fit gap-x-2'>
+                                <AiOutlineHome className='h-5 w-5'/>
+                                صفحه اصلی
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#' className='flex justify-between items-center' onClick={toggleSubMenu}>
+                                <div className='flex items-center w-fit gap-x-2'>
+                                    <RiShoppingBagLine className='h-5 w-5'/>
+                                    فروشگاه
+                                </div>
+                                <FaChevronDown className='h-5 w-5'/>
+                            </Link>
+                            <ul
+                                className={`overflow-hidden transition-all duration-500 ${
+                                    isSubMenuOpen
+                                        ? 'max-h-60 opacity-100 mt-3'
+                                        : 'max-h-0 opacity-0'
+                                } space-y-3 mr-7`}
+                            >
+                                <li>
+                                    قهوه ویژه
+                                </li>
+                                <li>
+                                    ویژه در سطح جهانی
+                                </li>
+                                <li>
+                                    قهوه درجه یک
+                                </li>
+                                <li>
+                                    ترکیبات تجاری
+                                </li>
+                                <li>
+                                    کپسول قهوه
+                                </li>
+                                <li>
+                                    قهوه زینو برزیلی
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <Link href='#' className='flex items-center w-fit gap-x-2'>
+                                <HiOutlineChatBubbleLeftEllipsis className='h-5 w-5'/>
+                                دیکشنری
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#' className='flex items-center w-fit gap-x-2'>
+                                <HiOutlineBriefcase className='h-5 w-5'/>
+                                درباره ما
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#' className='flex items-center w-fit gap-x-2'>
+                                <IoDocumentTextOutline className='h-5 w-5'/>
+                                بلاگ
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='#' className='flex items-center w-fit gap-x-2'>
+                                <HiOutlinePhoneArrowUpRight className='h-5 w-5'/>
+                                تماس با ما
+                            </Link>
+                        </li>
+                    </ul>
                     <div>
                     </div>
                     {/* bottom section*/}
