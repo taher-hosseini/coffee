@@ -16,18 +16,63 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/*body {*/
+/*  color: rgb(var(--foreground-rgb));*/
+/*  background: linear-gradient(*/
+/*      to bottom,*/
+/*      transparent,*/
+/*      rgb(var(--background-end-rgb))*/
+/*    )*/
+/*    rgb(var(--background-start-rgb));*/
+/*}*/
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+.btn-2{
+  @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800
+}
+
+
+/*font face*/
+@font-face {
+  font-family: "Vazir";
+  font-weight: normal;
+  font-style: normal;
+  src: local("Vazirmatn-FD-Regular"), url('../public/fonts/eot/Vazirmatn-FD-Regular.eot');
+  src: local("Vazirmatn-FD-Regular"), url('../public/fonts/eot/Vazirmatn-FD-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../public/fonts/woff2/Vazirmatn-FD-Regular.woff2') format('woff2'),
+  url('../public/fonts/woff/Vazirmatn-FD-Regular.woff') format('woff'),
+  url('../public/fonts/ttf/Vazirmatn-FD-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazir Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: local("Vazirmatn-FD-Bold"), url('../public/fonts/eot/Vazirmatn-FD-Bold.eot');
+  src: local("Vazirmatn-FD-Bold"), url('../public/fonts/eot/Vazirmatn-FD-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../public/fonts/woff2/Vazirmatn-FD-Bold.woff2') format('woff2'),
+  url('../public/fonts/woff/Vazirmatn-FD-Bold.woff') format('woff'),
+  url('../public/fonts/ttf/Vazirmatn-FD-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+body{
+  font-family: Vazir,sans-serif;
+  background-image: url("../public/images/headerBgDesktop.webp");
+  background-repeat: no-repeat;
 }

@@ -2,26 +2,20 @@ import UserModel from "@/models/User";
 import connectToDB from "@/configs/db";
 import { generateToken, hashPassword } from "@/utils/auth";
 import { serialize } from "cookie";
+import { NextApiRequest, NextApiResponse } from "next";
 
-const handler = async (req:any, res:any) => {
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     if (req.method !== "POST") {
-        return false;
+        return res.status(405).json({ message: "Method not allowed" });
     }
 
     try {
-        connectToDB();
+        await connectToDB();
 
         const { firstname, lastname, username, email, password } = req.body;
 
-        // Validation
-        if (
-            !firstname.trim() ||
-            !lastname.trim() ||
-            !username.trim() ||
-            !email.trim() ||
-            !password.trim()
-        ) {
-            return res.status(422).json({ message: "Data is not valid !!" });
+        if (!firstname || !lastname || !username || !email || !password) {
+            return res.status(422).json({ message: "Data is not valid!" });
         }
 
         const isUserExist = await UserModel.findOne({
@@ -29,14 +23,12 @@ const handler = async (req:any, res:any) => {
         });
 
         if (isUserExist) {
-            return res
-                .status(422)
-                .json({ message: "This username or email exist already !!" });
+            return res.status(422).json({ message: "This username or email already exists!" });
         }
 
         const hashedPassword = await hashPassword(password);
-
         const token = generateToken({ email });
+        const users = await UserModel.find({});
 
         await UserModel.create({
             firstname,
@@ -44,24 +36,22 @@ const handler = async (req:any, res:any) => {
             username,
             email,
             password: hashedPassword,
-            role: "USER",
+            role: users.length > 0 ? "USER" : "ADMIN",
         });
 
-        return res
-            .setHeader(
-                "Set-Cookie",
-                serialize("token", token, {
-                    httpOnly: true,
-                    path: "/",
-                    maxAge: 60 * 60 * 24,
-                })
-            )
-            .status(201)
-            .json({ message: "User Created Successfully :))" });
+        res.setHeader(
+            "Set-Cookie",
+            serialize("token", token, {
+                httpOnly: true,
+                path: "/",
+                maxAge: 60 * 60 * 24,
+            })
+        );
+
+        return res.status(201).json({ message: "User created successfully :))" });
     } catch (err) {
-        return res
-            .status(500)
-            .json({ message: "UnKnown Internal Server Erorr !!" });
+        console.error("Signup error:", err);
+        return res.status(500).json({ message: "Unknown internal server error" });
     }
 };
 

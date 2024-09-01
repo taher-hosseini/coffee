@@ -6,8 +6,30 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        "brown": {
+          "100": "#ECE0D1",
+          "300": "#DBC1AC",
+          "600": "#967259",
+          "900": "#634832",
+        }
+      },
+      boxShadow:{
+        "normal":"0px 1px 10px 0px rgba(0, 0, 0, 0.05)"
+      },
+      borderRadius:{
+        "4xl":"2rem"
+      },
+      fontFamily:{
+        "Vazir":"Vazir",
+        "VazirBold":"Vazir Bold",
+      },
+      letterSpacing:{
+        "tightest":"-0.065em"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -15,6 +37,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+      function ({addVariant}:any) {
+        addVariant('child','&>*');
+        addVariant('child-hover','&>*:hover');
+      }
+  ],
 };
 export default config;
