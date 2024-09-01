@@ -43,7 +43,7 @@ export default function HeaderM({
                 {/* right hamburger icon */}
                 <FaBars className='h-6 w-6 cursor-pointer' onClick={openMenu}/>
                 <div
-                    className={`fixed top-0 bottom-0 right-0 max-h-screen w-64 bg-white dark:bg-zinc-700 px-4 pt-3 z-20 transition-transform duration-300 ease-in-out 
+                    className={`fixed top-0 bottom-0 right-0 max-h-screen w-64 bg-white dark:bg-zinc-700 px-4 pt-3 z-20 transition-transform duration-300 ease-in-out overflow-y-auto 
                     ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
                 >
                     {/* top section */}
