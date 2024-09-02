@@ -37,7 +37,7 @@ export default function Header() {
     return (
         <>
             {/* desktop header */}
-            <header className='fixed md:flex hidden top-9 right-0 left-0 w-[95%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 bg-black/50 mx-auto rounded-3xl backdrop-blur-[6px]'>
+            <header className='fixed md:flex hidden top-9 right-0 left-0 xl:max-w-screen-2xl w-[95%] h-24 px-5 lg:px-10 py-5 bg-black/50 mx-auto rounded-3xl backdrop-blur-[6px]'>
                 <div className='flex justify-between w-full'>
                     {/* right menu */}
                     <nav className='flex items-center gap-x-5 lg:gap-x-9 h-14'>

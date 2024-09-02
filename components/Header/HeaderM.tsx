@@ -170,7 +170,7 @@ export default function HeaderM({
                         {/* icon */}
                         <h4 className='text-base text-zinc-700 dark:text-white'>سبد خرید</h4>
                     </div>
-                    <div className='flex items-center border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
+                    <div className='flex items-center text-zinc-700 dark:text-white border-b border-b-gray-100 dark:border-b-white/10 gap-x-1'>
                         <img src="/images/products/p2.png" alt="product" className='w-[90px] h-[90px]'/>
                         <div className='flex flex-col mb-6 mt-5'>
                             <h4 className='text-sm mb-1.5 line-clamp-2'>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
