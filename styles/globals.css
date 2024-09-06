@@ -80,10 +80,10 @@ body{
 
 @media screen and (min-width: 1280px){
   /* body background */
-  html.dark .products{
+  html.dark .products-new{
     background: url("../public/images/body-bg.png") no-repeat;
   }
-  .products{
+  .products-new{
     background: linear-gradient(rgba(243, 244, 246, 0.65),rgba(243, 244, 246, 0.65)), url("../public/images/body-bg.png") no-repeat;
     background-size: 100%;
   }

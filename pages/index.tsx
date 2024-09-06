@@ -55,9 +55,9 @@ export default function Home() {
                             <FaChevronDown className='h-4 w-4 text-zinc-700 dark:text-white'/>
                         </div>
                     </section>
-                    <section className='products min-h-[900px]'>
+                    <section className='products-new min-h-[900px]'>
                         {/*<div className='products-wrapper mx-auto max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl pt-48 text-zinc-700 dark:text-white'>*/}
-                        <div className='container lg:pt-48 pt-8 text-zinc-700 dark:text-white'>
+                        <section className='container lg:pt-48 pt-8 text-zinc-700 dark:text-white'>
                             <div className='flex justify-between items-end mb-5 md:mb-12'>
                                 <div className='flex flex-col justify-center gap-y-1.5'>
                                     <h3 className='section-title'>جدیدترین محصولات</h3>
@@ -69,10 +69,194 @@ export default function Home() {
                                     <MdOutlineChevronLeft className='w-5 h-5'/>
                                 </a>
                             </div>
-                            <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5'>
+                            <div className='products-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5'>
                                 <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
                                     <div className='relative mb-2 lg:mb-5'>
                                         <img src="/images/products/p1.png" alt="product" className='w-full h-full'/>
+                                        <span className='flex justify-center items-center absolute right-1 top-1
+                                         w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
+                                    </div>
+                                    <h5 className='text-sm lg:text-xl text-zinc-700 dark:text-white line-clamp-2'>
+                                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                                    </h5>
+                                    <div className='flex items-center gap-x-2 lg:gap-x-2.5 mt-2.5'>
+                                        <div
+                                            className='flex items-center text-base lg:text-xl text-teal-600 dark:text-emerald-500 gap-x-0.5'>
+                                            <span>154,000</span>
+                                            <span className='text-xs lg:text-sm'>تومان</span>
+                                        </div>
+                                        <div className='offer flex items-center text-xs lg:text-xl text-gray-400'>
+                                            <span>154,000</span>
+                                            <span className='lg:flex hidden text-xs lg:text-sm'>تومان</span>
+                                        </div>
+
+                                        {/*<span className='text-red-400 text-base lg:text-xl'>فعلا موجود نیست</span>*/}
+                                    </div>
+                                    <div className='flex justify-between items-center mt-4'>
+                                        <div className='flex items-center gap-x-2.5 lg:gap-x-3'>
+                                            <span
+                                                className='flex items-center justify-center w-[26px] h-[26px] lg:w-9 lg:h-9 bg-gray-100 dark:bg-zinc-800 rounded-full'>
+                                                <HiOutlineShoppingCart
+                                                    className='h-4 w-4 lg:h-[22px] lg:w-[22px] cursor-pointer text-gray-400'/>
+                                            </span>
+                                            <HiOutlineArrowsRightLeft
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-400'/>
+                                        </div>
+                                        <div className='flex items-center'>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-300 dark:text-gray-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
+                                    <div className='relative mb-2 lg:mb-5'>
+                                        <img src="/images/products/p2.png" alt="product" className='w-full h-full'/>
+                                        <span className='flex justify-center items-center absolute right-1 top-1
+                                         w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
+                                    </div>
+                                    <h5 className='text-sm lg:text-xl text-zinc-700 dark:text-white line-clamp-2'>
+                                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                                    </h5>
+                                    <div className='flex items-center gap-x-2 lg:gap-x-2.5 mt-2.5'>
+                                        <div
+                                            className='flex items-center text-base lg:text-xl text-teal-600 dark:text-emerald-500 gap-x-0.5'>
+                                            <span>154,000</span>
+                                            <span className='text-xs lg:text-sm'>تومان</span>
+                                        </div>
+                                        <div className='offer flex items-center text-xs lg:text-xl text-gray-400'>
+                                            <span>154,000</span>
+                                            <span className='lg:flex hidden text-xs lg:text-sm'>تومان</span>
+                                        </div>
+
+                                        {/*<span className='text-red-400 text-base lg:text-xl'>فعلا موجود نیست</span>*/}
+                                    </div>
+                                    <div className='flex justify-between items-center mt-4'>
+                                        <div className='flex items-center gap-x-2.5 lg:gap-x-3'>
+                                            <span
+                                                className='flex items-center justify-center w-[26px] h-[26px] lg:w-9 lg:h-9 bg-gray-100 dark:bg-zinc-800 rounded-full'>
+                                                <HiOutlineShoppingCart
+                                                    className='h-4 w-4 lg:h-[22px] lg:w-[22px] cursor-pointer text-gray-400'/>
+                                            </span>
+                                            <HiOutlineArrowsRightLeft
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-400'/>
+                                        </div>
+                                        <div className='flex items-center'>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-300 dark:text-gray-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
+                                    <div className='relative mb-2 lg:mb-5'>
+                                        <img src="/images/products/p3.png" alt="product" className='w-full h-full'/>
+                                        <span className='flex justify-center items-center absolute right-1 top-1
+                                         w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
+                                    </div>
+                                    <h5 className='text-sm lg:text-xl text-zinc-700 dark:text-white line-clamp-2'>
+                                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                                    </h5>
+                                    <div className='flex items-center gap-x-2 lg:gap-x-2.5 mt-2.5'>
+                                        <div
+                                            className='flex items-center text-base lg:text-xl text-teal-600 dark:text-emerald-500 gap-x-0.5'>
+                                            <span>154,000</span>
+                                            <span className='text-xs lg:text-sm'>تومان</span>
+                                        </div>
+                                        <div className='offer flex items-center text-xs lg:text-xl text-gray-400'>
+                                            <span>154,000</span>
+                                            <span className='lg:flex hidden text-xs lg:text-sm'>تومان</span>
+                                        </div>
+
+                                        {/*<span className='text-red-400 text-base lg:text-xl'>فعلا موجود نیست</span>*/}
+                                    </div>
+                                    <div className='flex justify-between items-center mt-4'>
+                                        <div className='flex items-center gap-x-2.5 lg:gap-x-3'>
+                                            <span
+                                                className='flex items-center justify-center w-[26px] h-[26px] lg:w-9 lg:h-9 bg-gray-100 dark:bg-zinc-800 rounded-full'>
+                                                <HiOutlineShoppingCart
+                                                    className='h-4 w-4 lg:h-[22px] lg:w-[22px] cursor-pointer text-gray-400'/>
+                                            </span>
+                                            <HiOutlineArrowsRightLeft
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-400'/>
+                                        </div>
+                                        <div className='flex items-center'>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-300 dark:text-gray-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
+                                    <div className='relative mb-2 lg:mb-5'>
+                                        <img src="/images/products/p4.png" alt="product" className='w-full h-full'/>
+                                        <span className='flex justify-center items-center absolute right-1 top-1
+                                         w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
+                                    </div>
+                                    <h5 className='text-sm lg:text-xl text-zinc-700 dark:text-white line-clamp-2'>
+                                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                                    </h5>
+                                    <div className='flex items-center gap-x-2 lg:gap-x-2.5 mt-2.5'>
+                                        <div
+                                            className='flex items-center text-base lg:text-xl text-teal-600 dark:text-emerald-500 gap-x-0.5'>
+                                            <span>154,000</span>
+                                            <span className='text-xs lg:text-sm'>تومان</span>
+                                        </div>
+                                        <div className='offer flex items-center text-xs lg:text-xl text-gray-400'>
+                                            <span>154,000</span>
+                                            <span className='lg:flex hidden text-xs lg:text-sm'>تومان</span>
+                                        </div>
+
+                                        {/*<span className='text-red-400 text-base lg:text-xl'>فعلا موجود نیست</span>*/}
+                                    </div>
+                                    <div className='flex justify-between items-center mt-4'>
+                                        <div className='flex items-center gap-x-2.5 lg:gap-x-3'>
+                                            <span
+                                                className='flex items-center justify-center w-[26px] h-[26px] lg:w-9 lg:h-9 bg-gray-100 dark:bg-zinc-800 rounded-full'>
+                                                <HiOutlineShoppingCart
+                                                    className='h-4 w-4 lg:h-[22px] lg:w-[22px] cursor-pointer text-gray-400'/>
+                                            </span>
+                                            <HiOutlineArrowsRightLeft
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-400'/>
+                                        </div>
+                                        <div className='flex items-center'>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-300 dark:text-gray-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                            <FaRegStar
+                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
+                                    <div className='relative mb-2 lg:mb-5'>
+                                        <img src="/images/products/p2.png" alt="product" className='w-full h-full'/>
                                         <span className='flex justify-center items-center absolute right-1 top-1
                                          w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
                                     </div>
@@ -164,7 +348,7 @@ export default function Home() {
                                 </div>
                                 <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
                                     <div className='relative mb-2 lg:mb-5'>
-                                        <img src="/images/products/p1.png" alt="product" className='w-full h-full'/>
+                                        <img src="/images/products/p4.png" alt="product" className='w-full h-full'/>
                                         <span className='flex justify-center items-center absolute right-1 top-1
                                          w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
                                     </div>
@@ -210,191 +394,7 @@ export default function Home() {
                                 </div>
                                 <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
                                     <div className='relative mb-2 lg:mb-5'>
-                                        <img src="/images/products/p1.png" alt="product" className='w-full h-full'/>
-                                        <span className='flex justify-center items-center absolute right-1 top-1
-                                         w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
-                                    </div>
-                                    <h5 className='text-sm lg:text-xl text-zinc-700 dark:text-white line-clamp-2'>
-                                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
-                                    </h5>
-                                    <div className='flex items-center gap-x-2 lg:gap-x-2.5 mt-2.5'>
-                                        <div
-                                            className='flex items-center text-base lg:text-xl text-teal-600 dark:text-emerald-500 gap-x-0.5'>
-                                            <span>154,000</span>
-                                            <span className='text-xs lg:text-sm'>تومان</span>
-                                        </div>
-                                        <div className='offer flex items-center text-xs lg:text-xl text-gray-400'>
-                                            <span>154,000</span>
-                                            <span className='lg:flex hidden text-xs lg:text-sm'>تومان</span>
-                                        </div>
-
-                                        {/*<span className='text-red-400 text-base lg:text-xl'>فعلا موجود نیست</span>*/}
-                                    </div>
-                                    <div className='flex justify-between items-center mt-4'>
-                                        <div className='flex items-center gap-x-2.5 lg:gap-x-3'>
-                                            <span
-                                                className='flex items-center justify-center w-[26px] h-[26px] lg:w-9 lg:h-9 bg-gray-100 dark:bg-zinc-800 rounded-full'>
-                                                <HiOutlineShoppingCart
-                                                    className='h-4 w-4 lg:h-[22px] lg:w-[22px] cursor-pointer text-gray-400'/>
-                                            </span>
-                                            <HiOutlineArrowsRightLeft
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-400'/>
-                                        </div>
-                                        <div className='flex items-center'>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-300 dark:text-gray-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
-                                    <div className='relative mb-2 lg:mb-5'>
-                                        <img src="/images/products/p1.png" alt="product" className='w-full h-full'/>
-                                        <span className='flex justify-center items-center absolute right-1 top-1
-                                         w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
-                                    </div>
-                                    <h5 className='text-sm lg:text-xl text-zinc-700 dark:text-white line-clamp-2'>
-                                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
-                                    </h5>
-                                    <div className='flex items-center gap-x-2 lg:gap-x-2.5 mt-2.5'>
-                                        <div
-                                            className='flex items-center text-base lg:text-xl text-teal-600 dark:text-emerald-500 gap-x-0.5'>
-                                            <span>154,000</span>
-                                            <span className='text-xs lg:text-sm'>تومان</span>
-                                        </div>
-                                        <div className='offer flex items-center text-xs lg:text-xl text-gray-400'>
-                                            <span>154,000</span>
-                                            <span className='lg:flex hidden text-xs lg:text-sm'>تومان</span>
-                                        </div>
-
-                                        {/*<span className='text-red-400 text-base lg:text-xl'>فعلا موجود نیست</span>*/}
-                                    </div>
-                                    <div className='flex justify-between items-center mt-4'>
-                                        <div className='flex items-center gap-x-2.5 lg:gap-x-3'>
-                                            <span
-                                                className='flex items-center justify-center w-[26px] h-[26px] lg:w-9 lg:h-9 bg-gray-100 dark:bg-zinc-800 rounded-full'>
-                                                <HiOutlineShoppingCart
-                                                    className='h-4 w-4 lg:h-[22px] lg:w-[22px] cursor-pointer text-gray-400'/>
-                                            </span>
-                                            <HiOutlineArrowsRightLeft
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-400'/>
-                                        </div>
-                                        <div className='flex items-center'>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-300 dark:text-gray-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
-                                    <div className='relative mb-2 lg:mb-5'>
-                                        <img src="/images/products/p1.png" alt="product" className='w-full h-full'/>
-                                        <span className='flex justify-center items-center absolute right-1 top-1
-                                         w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
-                                    </div>
-                                    <h5 className='text-sm lg:text-xl text-zinc-700 dark:text-white line-clamp-2'>
-                                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
-                                    </h5>
-                                    <div className='flex items-center gap-x-2 lg:gap-x-2.5 mt-2.5'>
-                                        <div
-                                            className='flex items-center text-base lg:text-xl text-teal-600 dark:text-emerald-500 gap-x-0.5'>
-                                            <span>154,000</span>
-                                            <span className='text-xs lg:text-sm'>تومان</span>
-                                        </div>
-                                        <div className='offer flex items-center text-xs lg:text-xl text-gray-400'>
-                                            <span>154,000</span>
-                                            <span className='lg:flex hidden text-xs lg:text-sm'>تومان</span>
-                                        </div>
-
-                                        {/*<span className='text-red-400 text-base lg:text-xl'>فعلا موجود نیست</span>*/}
-                                    </div>
-                                    <div className='flex justify-between items-center mt-4'>
-                                        <div className='flex items-center gap-x-2.5 lg:gap-x-3'>
-                                            <span
-                                                className='flex items-center justify-center w-[26px] h-[26px] lg:w-9 lg:h-9 bg-gray-100 dark:bg-zinc-800 rounded-full'>
-                                                <HiOutlineShoppingCart
-                                                    className='h-4 w-4 lg:h-[22px] lg:w-[22px] cursor-pointer text-gray-400'/>
-                                            </span>
-                                            <HiOutlineArrowsRightLeft
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-400'/>
-                                        </div>
-                                        <div className='flex items-center'>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-300 dark:text-gray-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
-                                    <div className='relative mb-2 lg:mb-5'>
-                                        <img src="/images/products/p1.png" alt="product" className='w-full h-full'/>
-                                        <span className='flex justify-center items-center absolute right-1 top-1
-                                         w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
-                                    </div>
-                                    <h5 className='text-sm lg:text-xl text-zinc-700 dark:text-white line-clamp-2'>
-                                        قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
-                                    </h5>
-                                    <div className='flex items-center gap-x-2 lg:gap-x-2.5 mt-2.5'>
-                                        <div
-                                            className='flex items-center text-base lg:text-xl text-teal-600 dark:text-emerald-500 gap-x-0.5'>
-                                            <span>154,000</span>
-                                            <span className='text-xs lg:text-sm'>تومان</span>
-                                        </div>
-                                        <div className='offer flex items-center text-xs lg:text-xl text-gray-400'>
-                                            <span>154,000</span>
-                                            <span className='lg:flex hidden text-xs lg:text-sm'>تومان</span>
-                                        </div>
-
-                                        {/*<span className='text-red-400 text-base lg:text-xl'>فعلا موجود نیست</span>*/}
-                                    </div>
-                                    <div className='flex justify-between items-center mt-4'>
-                                        <div className='flex items-center gap-x-2.5 lg:gap-x-3'>
-                                            <span
-                                                className='flex items-center justify-center w-[26px] h-[26px] lg:w-9 lg:h-9 bg-gray-100 dark:bg-zinc-800 rounded-full'>
-                                                <HiOutlineShoppingCart
-                                                    className='h-4 w-4 lg:h-[22px] lg:w-[22px] cursor-pointer text-gray-400'/>
-                                            </span>
-                                            <HiOutlineArrowsRightLeft
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-400'/>
-                                        </div>
-                                        <div className='flex items-center'>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-gray-300 dark:text-gray-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                            <FaRegStar
-                                                className='h-4 w-4 lg:h-6 lg:w-6 cursor-pointer text-yellow-400'/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='flex flex-col bg-white dark:bg-zinc-700 shadow-normal rounded-2xl p-5 '>
-                                    <div className='relative mb-2 lg:mb-5'>
-                                        <img src="/images/products/p1.png" alt="product" className='w-full h-full'/>
+                                        <img src="/images/products/p3.png" alt="product" className='w-full h-full'/>
                                         <span className='flex justify-center items-center absolute right-1 top-1
                                          w-[40px] h-[20px] lg:w-[54px] lg:h-[30px] text-xs lg:text-base bg-orange-300 text-white dark:text-zinc-700 rounded-[100px]'>12%</span>
                                     </div>
@@ -439,10 +439,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                className=' grid grid-cols-1 md:grid-cols-2 child:h-[248px] gap-5 mt-8 md:mt-20 child:bg-gray-600 child:rounded-2xl '>
-                                <div
-                                    className='relative flex flex-col p-7 lg:p-12 gap-y-4 lg:gap-y-7 justify-center text-white leading-6'>
+                            <div className='category-banner grid grid-cols-1 md:grid-cols-2 child:h-[142px] child:lg:h-[248px] gap-5 mt-8 md:mt-20 child:bg-gray-600 child:rounded-2xl '>
+                                <div className='relative flex flex-col p-7 lg:p-12 gap-y-4 lg:gap-y-7 justify-center text-white leading-6'>
                                     <img src="/images/categories/category-right.jpg" alt="product"
                                          className='absolute inset-0 w-full h-full object-fill z-0 rounded-2xl'/>
                                     <div
@@ -450,8 +448,7 @@ export default function Home() {
                                     <span className='text-2xl lg:text-4xl z-10'>انواع قهوه</span>
                                     <span className='text-base lg:text-xl z-10'>ترکیبی و تک خاستگاه</span>
                                 </div>
-                                <div
-                                    className='relative flex flex-col p-7 lg:p-12 gap-y-4 lg:gap-y-7 justify-center text-white leading-6'>
+                                <div className='relative flex flex-col p-7 lg:p-12 gap-y-4 lg:gap-y-7 justify-center text-white leading-6'>
                                     <img src="/images/categories/category-left.jpg" alt="product"
                                          className=' absolute inset-0 w-full h-full object-fill z-0 rounded-2xl'/>
                                     <div
@@ -460,7 +457,35 @@ export default function Home() {
                                     <span className='text-base lg:text-xl z-10'>نسکافه ، هات چاکلت ، ماسالا</span>
                                 </div>
                             </div>
-                        </div>
+                            <div className='products-category flex flex-wrap justify-evenly items-center my-20 gap-y-8'>
+                                <div className='w-[100px] md:w-[200px] flex flex-col justify-center items-center text-center gap-y-1.5 md:gap-y-2.5'>
+                                    <a href="#"><img src="/images/categories/category1.png" alt="product"/></a>
+                                    <h4 className='text-sm lg:text-xl text-zinc-700 dark:text-white'>قهوه دمی و
+                                        اسپرسو</h4>
+                                </div>
+                                <div
+                                    className='w-[100px] md:w-[200px] flex flex-col justify-center items-center text-center gap-y-1.5 md:gap-y-2.5'>
+                                    <a href="#"><img src="/images/categories/category2.png" alt="product"/></a>
+                                    <h4 className='text-sm lg:text-xl text-zinc-700 dark:text-white'>لوازم جانبی و تجهیزات</h4>
+                                </div>
+                                <div
+                                    className='w-[100px] md:w-[200px] flex flex-col justify-center items-center text-center gap-y-1.5 md:gap-y-2.5'>
+                                    <a href="#"><img src="/images/categories/category3.png" alt="product"/></a>
+                                    <h4 className='text-sm lg:text-xl text-zinc-700 dark:text-white'>اسپرسو ساز</h4>
+                                </div>
+                                <div
+                                    className='w-[100px] md:w-[200px] flex flex-col justify-center items-center text-center gap-y-1.5 md:gap-y-2.5'>
+                                    <a href="#"><img src="/images/categories/category4.png" alt="product"/></a>
+                                    <h4 className='text-sm lg:text-xl text-zinc-700 dark:text-white'>پک تستر قهوه</h4>
+                                </div>
+                                <div
+                                    className='w-[100px] md:w-[200px] flex flex-col justify-center items-center text-center gap-y-1.5 md:gap-y-2.5'>
+                                    <a href="#"><img src="/images/categories/category5.png" alt="product"/></a>
+                                    <h4 className='text-sm lg:text-xl text-zinc-700 dark:text-white'>قهوه ترک</h4>
+                                </div>
+
+                            </div>
+                        </section>
 
 
                     </section>
@@ -468,7 +493,7 @@ export default function Home() {
                         {products ? products.map((product: Product) => (
                             <Link key={product._id} href={`/products/${product._id}`}>
                                 <p className="block py-2 text-sm text-gray-700 hover:text-gray-900">
-                                    {product.name} {product.description}
+                                {product.name} {product.description}
                                 </p>
                             </Link>
                         )) : <p>error</p>}
