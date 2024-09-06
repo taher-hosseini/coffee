@@ -37,7 +37,7 @@ export default function Header() {
     return (
         <>
             {/* desktop header */}
-            <header className='fixed md:flex hidden top-9 right-0 left-0 xl:max-w-screen-2xl w-[95%] h-24 px-5 lg:px-10 py-5 bg-black/50 mx-auto rounded-3xl backdrop-blur-[6px]'>
+            <header className='fixed md:flex hidden top-9 right-0 left-0 z-50  xl:max-w-[1536px] lg:w-[90%] w-[95%] h-24 px-5 lg:px-10 py-5 bg-black/50 mx-auto rounded-3xl backdrop-blur-[6px]'>
                 <div className='flex justify-between w-full'>
                     {/* right menu */}
                     <nav className='flex items-center gap-x-5 lg:gap-x-9 h-14'>
@@ -50,9 +50,10 @@ export default function Header() {
                                 <Link href='#'>صفحه اصلی</Link>
                             </li>
                             <li className='relative group'>
-                                <Link href='#' className='group-hover:text-orange-300 transition-colors'>فروشگاه</Link>
+                                <Link href='#'
+                                      className='group-hover:text-orange-300 transition-colors'>فروشگاه</Link>
                                 <ul className='absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 w-52 p-6 space-y-4 bg-white rounded-2xl dark:bg-zinc-700 text-zinc-700 text-base top-full
-                             dark:text-white border-t-[3px] border-t-orange-300 shadow-normal transition-all delay-100 child:transition-colors child-hover:text-orange-300 tracking-normal'>
+                         dark:text-white border-t-[3px] border-t-orange-300 shadow-normal transition-all delay-100 child:transition-colors child-hover:text-orange-300 tracking-normal'>
                                     <li>
                                         <Link href='#'>قهوه ویژه</Link>
                                     </li>
@@ -93,7 +94,7 @@ export default function Header() {
                             <div className='py-3 relative group '>
                                 <HiOutlineShoppingCart className='h-8 w-8 cursor-pointer'/>
                                 <div className='absolute top-full left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100 rounded-2xl bg-white dark:bg-zinc-700 w-[400px] p-5 border-t-[3px] border-t-orange-300
-                                text-zinc-700 dark:text-white shadow-normal transition-all delay-100'>
+                            text-zinc-700 dark:text-white shadow-normal transition-all delay-100'>
                                     {/* cart header*/}
                                     <div
                                         className='flex items-center justify-between text-xs leading-6 tracking-tighter'>
@@ -105,7 +106,8 @@ export default function Header() {
                                     </div>
                                     {/* products list */}
                                     <div>
-                                        <div className='flex items-center border-b border-b-gray-300 dark:border-b-white/10'>
+                                        <div
+                                            className='flex items-center border-b border-b-gray-300 dark:border-b-white/10'>
                                             <img src="/images/products/p2.png" alt="product"
                                                  className='w-[120px] h-[120px]'/>
                                             <div className='flex flex-col mr-2.5 mb-6 mt-5'>
@@ -150,8 +152,8 @@ export default function Header() {
                         </Link>
                     </div>
                 </div>
-
             </header>
+
             {/* mobile header */}
             <HeaderM isDark={isDark} toggleTheme={toggleTheme}/>
         </>

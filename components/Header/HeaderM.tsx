@@ -43,7 +43,7 @@ export default function HeaderM({
                 {/* right hamburger icon */}
                 <FaBars className='h-6 w-6 cursor-pointer' onClick={openMenu}/>
                 <div
-                    className={`fixed top-0 bottom-0 right-0 max-h-screen w-64 bg-white dark:bg-zinc-700 px-4 pt-3 z-20 transition-transform duration-300 ease-in-out overflow-y-auto
+                    className={`fixed top-0 bottom-0 right-0 max-h-screen w-64 bg-white dark:bg-zinc-700 px-4 pt-3 z-30 transition-transform duration-300 ease-in-out overflow-y-auto
                     ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
                 >
                     {/* top section */}
@@ -161,7 +161,7 @@ export default function HeaderM({
                 {/* left cart icon */}
                 <HiOutlineShoppingCart className='h-6 w-6 cursor-pointer' onClick={openCartMenu}/>
                 <div
-                    className={`fixed top-0 bottom-0 -left-64 h-screen w-64 bg-white dark:bg-zinc-700 px-4 pt-3 z-20 transition-transform duration-300 ease-in-out overflow-y-auto 
+                    className={`fixed top-0 bottom-0 -left-64 h-screen w-64 bg-white dark:bg-zinc-700 px-4 pt-3 z-30 transition-transform duration-300 ease-in-out overflow-y-auto 
                     ${isCartMenuOpen ? 'translate-x-full' : 'translate-x-0'}`}>
 
                     <div
@@ -180,12 +180,24 @@ export default function HeaderM({
                             </span>
                         </div>
                     </div>
+                    <div className='flex justify-between absolute bottom-2 gap-x-4'>
+                        <button className='flex justify-center items-center w-28 h-11 bg-teal-600 dark:bg-emerald-500 text-white rounded-xl'>ثبت سفارش</button>
+                        <div className='flex flex-col justify-center'>
+                            <span className='text-xs/[25px] tracking-tighter text-gray-300 '>مبلغ قابل پرداخت</span>
+                            <span className='text-base/[22px] text-zinc-700 dark:text-white'>
+                                350,000
+                                <span className='text-xs/[17px] mr-1'>
+                                    تومان
+                                </span>
+                            </span>
+                        </div>
+                    </div>
 
                 </div>
 
             </div>
             <div
-                className={`${overlay ? 'overlay md:hidden fixed w-full h-full z-10 inset-0 bg-black/40' : 'hidden'}`}
+                className={`${overlay ? 'overlay md:hidden fixed w-full h-full z-20 inset-0 bg-black/40' : 'hidden'}`}
                 onClick={closeAllMenu}>
             </div>
         </>
