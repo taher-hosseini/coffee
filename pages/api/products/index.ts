@@ -10,7 +10,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     try {
         await connectToDB();
-        const products = await Product.find().populate('category');
+        // const products = await Product.find().populate('category');
+        const products = await Product.find()
         res.status(200).json({ products });
     } catch (error) {
         res.status(500).json({ message: 'Internal Server Error' });

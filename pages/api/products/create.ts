@@ -11,20 +11,25 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     try {
         await connectToDB();
 
-        const { name, description, price, category, imageUrl } = req.body;
+        const { name, image, originalPrice, discount, count, rating, salesCount, createdAt } = req.body;
 
         // Validation
-        if (!name || !description || !price || !category) {
+        if (!name || !image || !originalPrice) {
             console.error('Required fields are missing:', req.body);
             return res.status(422).json({ message: 'Required fields are missing' });
         }
+        const finalPrice = originalPrice - (originalPrice * (discount || 0) / 100);
 
         const newProduct = new Product({
             name,
-            description,
-            price,
-            category,
-            imageUrl,
+            image,
+            finalPrice,
+            originalPrice,
+            discount: discount || 0,
+            count,
+            rating,
+            salesCount,
+            createdAt,
         });
 
         const savedProduct = await newProduct.save();

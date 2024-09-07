@@ -80,12 +80,12 @@ body{
 
 @media screen and (min-width: 1280px){
   /* body background */
-  html.dark .products-new{
-    background: url("../public/images/body-bg.png") no-repeat;
+  html.dark .products{
+    background: url("../public/images/body-bg.png") no-repeat top;
   }
-  .products-new{
-    background: linear-gradient(rgba(243, 244, 246, 0.65),rgba(243, 244, 246, 0.65)), url("../public/images/body-bg.png") no-repeat;
-    background-size: 100%;
+  .products{
+    background: linear-gradient(rgba(243, 244, 246, 0.65),rgba(243, 244, 246, 0.65)), url("../public/images/body-bg.png") no-repeat top;
+    /*background-size: 100%;*/
   }
 }
 
@@ -98,6 +98,12 @@ body{
 }
 .section-link{
   @apply flex items-center h-10 pr-3 pl-1 md:gap-x-1 rounded-md lg:text-xl/[28.6px] text-base/[22px] tracking-[-0.065em] text-orange-300 md:hover:bg-orange-300/20 transition-colors
+}
+.section-slider{
+  @apply flex items-center gap-x-4;
+}
+.section-slider-span{
+  @apply flex justify-center items-center w-9 h-9 md:w-11 md:h-11 bg-white dark:bg-zinc-700 hover:bg-gray-300 hover:dark:bg-white rounded-full;
 }
 
 .offer{
