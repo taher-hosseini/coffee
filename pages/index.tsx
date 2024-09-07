@@ -169,27 +169,17 @@ export default function Home({products}:any) {
                                     modules={[Navigation]}
                                     className="mySwiper"
                                 >
-                                    {products?.length > 0 &&
-                                        products
-                                            .sort((a: Product, b: Product) => b.salesCount - a.salesCount)
-                                            .map((product: Product) => (
-                                                <SwiperSlide key={product.id}>
-                                                    <ProductBox product={product}/>
-                                                </SwiperSlide>
-                                            ))
+                                    {products?.length > 0 && products
+                                        .sort((a: Product, b: Product) => b.salesCount - a.salesCount)
+                                        .slice(0, 5)
+                                        .map((product: Product) => (
+                                            <SwiperSlide key={product.id}>
+                                                <ProductBox product={product}/>
+                                            </SwiperSlide>
+                                        ))
                                     }
                                 </Swiper>
                             </div>
-
-                            {/*<div className='products-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5'>*/}
-                            {/*    {products?.length > 0 && products*/}
-                            {/*        .sort((a: Product, b: Product) => b.salesCount - a.salesCount)*/}
-                            {/*        .slice(0, 4)*/}
-                            {/*        .map((product: Product) => (*/}
-                            {/*            <ProductBox key={product.id} product={product}/>*/}
-                            {/*        ))*/}
-                            {/*    }*/}
-                            {/*</div>*/}
                         </section>
                     </section>
                 </main>
@@ -199,7 +189,7 @@ export default function Home({products}:any) {
 }
 
 export async function getServerSideProps() {
-    const res = await fetch('http://localhost:3000/api/products/');
+    const res = await fetch('http://localhost:3000/api/products/' || 'https://coffee75.vercel.app/api/products/');
     // const res = await fetch('https://coffee75.vercel.app/api/products/');
     const data = await res.json()
     return {
