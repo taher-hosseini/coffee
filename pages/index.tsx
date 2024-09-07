@@ -189,8 +189,8 @@ export default function Home({products}:any) {
 }
 
 export async function getServerSideProps() {
+    // const res = await fetch('http://localhost:3000/api/products/');
     const res = await fetch('https://coffee75.vercel.app/api/products/');
-    // const res = await fetch('https://coffee75.vercel.app/api/products/');
     const data = await res.json()
     return {
         props: {
