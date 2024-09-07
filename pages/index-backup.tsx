@@ -4,11 +4,6 @@ import {FaChevronDown} from "react-icons/fa6";
 import {MdOutlineChevronLeft} from "react-icons/md";
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 import ProductBox from "@/components/body/ProductBox";
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination} from "swiper/modules";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
 type Product = {
     id: string;
@@ -68,8 +63,7 @@ export default function Home({products}:any) {
                                     <MdOutlineChevronLeft className='w-5 h-5'/>
                                 </a>
                             </div>
-                            <div
-                                className='products-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5'>
+                            <div className='products-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5'>
                                 {products?.length > 0 && products
                                     .sort((a: Product, b: Product) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
                                     .slice(0, 4)
@@ -78,8 +72,7 @@ export default function Home({products}:any) {
                                     ))
                                 }
                             </div>
-                            <div
-                                className='category-banner grid grid-cols-1 md:grid-cols-2 child:h-[142px] child:lg:h-[248px] gap-5 mt-8 md:mt-20 child:bg-gray-600 child:rounded-2xl '>
+                            <div className='category-banner grid grid-cols-1 md:grid-cols-2 child:h-[142px] child:lg:h-[248px] gap-5 mt-8 md:mt-20 child:bg-gray-600 child:rounded-2xl '>
                                 <div
                                     className='relative flex flex-col p-7 lg:p-12 gap-y-4 lg:gap-y-7 justify-center text-white leading-6'>
                                     <img src="/images/categories/category-right.jpg" alt="product"
@@ -130,69 +123,53 @@ export default function Home({products}:any) {
 
                             </div>
 
-
                             {/* more sales products */}
                             <div className='flex justify-between items-end mb-5 md:mb-12'>
                                 <div className='flex flex-col justify-center gap-y-1.5'>
                                     <h3 className='section-title'>محصولات پر فروش</h3>
                                     <span className='section-subtitle'>پیشنهاد قهوه خور ها ...</span>
                                 </div>
-                                <div className='section-slider'>
-                                    <span className='swiper-button-next-custom section-slider-span group'>
-                                        <FaChevronRight
-                                            className='w-5 h-5 md:w-[26px] md:h-p26px] text-zinc-700 dark:text-white group-hover:dark:text-zinc-700'/>
+                                <a href="" className='section-slider'>
+                                    <span className='section-slider-span group'>
+                                        <FaChevronRight className='w-5 h-5 md:w-[26px] md:h-p26px] text-zinc-700 dark:text-white group-hover:dark:text-zinc-700'/>
                                     </span>
-                                    <span className='swiper-button-prev-custom section-slider-span group'>
-                                        <FaChevronLeft
-                                            className='w-5 h-5 md:w-[26px] md:h-p26px] text-zinc-700 dark:text-white group-hover:dark:text-zinc-700'/>
+                                    <span className='section-slider-span group'>
+                                        <FaChevronLeft className='w-5 h-5 md:w-[26px] md:h-p26px] text-zinc-700 dark:text-white group-hover:dark:text-zinc-700'/>
                                     </span>
-                                </div>
-                            </div>
-                            <div className='products-slider'>
-                                <Swiper
-                                    slidesPerView={2}
-                                    spaceBetween={15}
-                                    navigation={{
-                                        nextEl: '.swiper-button-prev-custom',
-                                        prevEl: '.swiper-button-next-custom',
-                                    }}
-                                    breakpoints={{
-                                        640: {
-                                            slidesPerView: 3,
-                                            spaceBetween: 15,
-                                        },
-                                        1024: {
-                                            slidesPerView: 4,
-                                            spaceBetween: 20,
-                                        },
-                                    }}
-                                    modules={[Navigation]}
-                                    className="mySwiper"
-                                >
-                                    {products?.length > 0 &&
-                                        products
-                                            .sort((a: Product, b: Product) => b.salesCount - a.salesCount)
-                                            .map((product: Product) => (
-                                                <SwiperSlide key={product.id}>
-                                                    <ProductBox product={product}/>
-                                                </SwiperSlide>
-                                            ))
-                                    }
-                                </Swiper>
-                            </div>
 
-                            {/*<div className='products-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5'>*/}
-                            {/*    {products?.length > 0 && products*/}
-                            {/*        .sort((a: Product, b: Product) => b.salesCount - a.salesCount)*/}
-                            {/*        .slice(0, 4)*/}
-                            {/*        .map((product: Product) => (*/}
-                            {/*            <ProductBox key={product.id} product={product}/>*/}
-                            {/*        ))*/}
-                            {/*    }*/}
-                            {/*</div>*/}
+                                    {/*<span className='flex md:hidden'>مشاهده همه</span>*/}
+                                    {/*<MdOutlineChevronLeft className='w-5 h-5'/>*/}
+                                </a>
+                            </div>
+                            <div className='products-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5'>
+                                {products?.length > 0 && products
+                                    .sort((a: Product, b: Product) => b.salesCount - a.salesCount)
+                                    .slice(0, 4)
+                                    .map((product: Product) => (
+                                        <ProductBox key={product.id} product={product}/>
+                                    ))
+                                }
+                            </div>
+                            <div className='py-6 px-11'>
+
+
+                            </div>
                         </section>
+
+
                     </section>
+                    <div className='mx-auto max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl'>
+                        {/*{products ? products.map((product: Product) => (*/}
+                        {/*    <Link key={product._id} href={`/products/${product._id}`}>*/}
+                        {/*        <p className="block py-2 text-sm text-gray-700 hover:text-gray-900">*/}
+                        {/*        {product.name} {product.description}*/}
+                        {/*        </p>*/}
+                        {/*    </Link>*/}
+                        {/*)) : <p>error</p>}*/}
+                    </div>
+
                 </main>
+
             </Layout>
         </>
     );
