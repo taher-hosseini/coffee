@@ -9,6 +9,10 @@ import {Navigation, Pagination} from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import SupportIcon from "@/components/icons/SupportIcon";
+import DeliveryIcon from "@/components/icons/DeliveryIcon";
+import CoffeeIcon from "@/components/icons/CoffeeIcon";
+import PitcherIcon from "@/components/icons/PitcherIcon";
 
 type Product = {
     id: string;
@@ -148,7 +152,7 @@ export default function Home({products}:any) {
                                     </span>
                                 </div>
                             </div>
-                            <div className='products-slider'>
+                            <div className='products-slider '>
                                 <Swiper
                                     slidesPerView={2}
                                     spaceBetween={15}
@@ -209,7 +213,7 @@ export default function Home({products}:any) {
                                             <span className='text-xs lg:text-sm'>جایزه ها</span>
                                         </span>
                                     </div>
-                                    <div className='flex flex-col'>
+                                    <div className='flex flex-col text-center'>
                                         <span className='text-2xl/[34px] lg:text-3xl/[42px]'>542</span>
                                         <span className='text-xs lg:text-sm mb-2'>امتیـــــــاز شما</span>
                                         <div className='flex items-center  lg:w-28 text-xs lg:text-sm py-1 px-2.5 gap-x-1 rounded-full
@@ -234,21 +238,151 @@ export default function Home({products}:any) {
                                 </a>
                             </div>
                             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 md:gap-5'>
-                                <div className='flex flex-row lg:flex-col bg-white dark:bg-zinc-700 rounded-2xl shadow-normal p-2.5 gap-y-2.5 lg:gap-x-0 gap-x-3'>
+                                <div
+                                    className='flex flex-row lg:flex-col bg-white dark:bg-zinc-700 rounded-2xl shadow-normal p-2.5 gap-y-2.5 lg:gap-x-0 gap-x-3'>
                                     <div className='flex basis-2/5 lg:basis-auto'>
-                                        <img src="/images/blogs/blog-1.png" alt="" className='rounded-xl rounded-bl-4xl'/>
+                                        <img src="/images/blogs/blog-1.png" alt=""
+                                             className='rounded-xl rounded-bl-4xl'/>
                                     </div>
-                                    <div className='flex basis-3/5 lg:basis-auto lg:flex-row flex-col justify-between items-center gap-y-[18px] gap-x-5'>
-                                        <h4 className='text-lg text-zinc-700 dark:text-white'>طرز تهیه قهوه دمی با
-                                            دستگاه اروپرس</h4>
-                                        <div className='w-full h-px lg:w-px lg:h-[90%] bg-gray-100 dark:bg-white/10'></div>
-                                        <div className='flex flex-row lg:flex-col items-center text-teal-600 dark:text-emerald-500'>
-                                            <span className='text-2xl'>21</span>
-                                            <span className='text-sm'>مرداد</span>
-                                            <span className='text-sm'>1402</span>
+                                    <div
+                                        className='flex basis-3/5 lg:basis-auto lg:flex-row flex-col justify-between items-center gap-y-[18px] gap-x-5'>
+                                        <span className='text-lg text-zinc-700 dark:text-white line-clamp-2'>طرز تهیه قهوه دمی با
+                                            دستگاه اروپرس</span>
+                                        <div
+                                            className='w-full h-px lg:w-px lg:h-[90%] bg-gray-100 dark:bg-white/10'></div>
+                                        <div
+                                            className='flex flex-row justify-between  w-full lg:w-auto text-teal-600 dark:text-emerald-500'>
+                                            <div className='flex items-center lg:flex-col gap-x-1'>
+                                                <span className='text-2xl'>21</span>
+                                                <span className='text-sm'>مرداد</span>
+                                                <span className='text-sm'>1402</span>
+                                            </div>
+                                            <button
+                                                className='flex lg:hidden items-center rounded-md text-orange-300 bg-orange-200/20 gap-x-1.5 px-2.5'>
+                                                مطالعه
+                                                <FaChevronLeft/>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
+                                <div
+                                    className='flex flex-row lg:flex-col bg-white dark:bg-zinc-700 rounded-2xl shadow-normal p-2.5 gap-y-2.5 lg:gap-x-0 gap-x-3'>
+                                    <div className='flex basis-2/5 lg:basis-auto'>
+                                        <img src="/images/blogs/blog-2.png" alt=""
+                                             className='rounded-xl rounded-bl-4xl'/>
+                                    </div>
+                                    <div
+                                        className='flex basis-3/5 lg:basis-auto lg:flex-row flex-col justify-between items-center gap-y-[18px] gap-x-5'>
+                                        <span className='text-lg text-zinc-700 dark:text-white line-clamp-2'>
+                                            یک نوشیدنی هیجان انگیز و پرکالری برای شروع روز
+                                        </span>
+                                        <div
+                                            className='w-full h-px lg:w-px lg:h-[90%] bg-gray-100 dark:bg-white/10'></div>
+                                        <div
+                                            className='flex flex-row justify-between  w-full lg:w-auto text-teal-600 dark:text-emerald-500'>
+                                            <div className='flex items-center lg:flex-col gap-x-1'>
+                                                <span className='text-2xl'>21</span>
+                                                <span className='text-sm'>مرداد</span>
+                                                <span className='text-sm'>1402</span>
+                                            </div>
+                                            <button
+                                                className='flex lg:hidden items-center rounded-md text-orange-300 bg-orange-200/20 gap-x-1.5 px-2.5'>
+                                                مطالعه
+                                                <FaChevronLeft/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    className='flex flex-row lg:flex-col bg-white dark:bg-zinc-700 rounded-2xl shadow-normal p-2.5 gap-y-2.5 lg:gap-x-0 gap-x-3'>
+                                    <div className='flex basis-2/5 lg:basis-auto'>
+                                        <img src="/images/blogs/blog-3.png" alt=""
+                                             className='rounded-xl rounded-bl-4xl'/>
+                                    </div>
+                                    <div
+                                        className='flex basis-3/5 lg:basis-auto lg:flex-row flex-col justify-between items-center gap-y-[18px] gap-x-5'>
+                                        <span className='text-lg text-zinc-700 dark:text-white line-clamp-2'>
+                                            طرز تهیه یک فنجان کافه زینو برزیلی
+                                        </span>
+                                        <div
+                                            className='w-full h-px lg:w-px lg:h-[90%] bg-gray-100 dark:bg-white/10'></div>
+                                        <div
+                                            className='flex flex-row justify-between  w-full lg:w-auto text-teal-600 dark:text-emerald-500'>
+                                            <div className='flex items-center lg:flex-col gap-x-1'>
+                                                <span className='text-2xl'>21</span>
+                                                <span className='text-sm'>مرداد</span>
+                                                <span className='text-sm'>1402</span>
+                                            </div>
+                                            <button
+                                                className='flex lg:hidden items-center rounded-md text-orange-300 bg-orange-200/20 gap-x-1.5 px-2.5'>
+                                                مطالعه
+                                                <FaChevronLeft/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    className='flex flex-row lg:flex-col bg-white dark:bg-zinc-700 rounded-2xl shadow-normal p-2.5 gap-y-2.5 lg:gap-x-0 gap-x-3'>
+                                    <div className='flex basis-2/5 lg:basis-auto'>
+                                        <img src="/images/blogs/blog-4.png" alt=""
+                                             className='rounded-xl rounded-bl-4xl'/>
+                                    </div>
+                                    <div
+                                        className='flex basis-3/5 lg:basis-auto lg:flex-row flex-col justify-between items-center gap-y-[18px] gap-x-5'>
+                                        <span className='text-lg text-zinc-700 dark:text-white line-clamp-2'>
+                                            طرز تهیه قهوه دالگونا مناسب روز‌های کرونایی
+                                        </span>
+                                        <div
+                                            className='w-full h-px lg:w-px lg:h-[90%] bg-gray-100 dark:bg-white/10'></div>
+                                        <div
+                                            className='flex flex-row justify-between  w-full lg:w-auto text-teal-600 dark:text-emerald-500'>
+                                            <div className='flex items-center lg:flex-col gap-x-1'>
+                                                <span className='text-2xl'>21</span>
+                                                <span className='text-sm'>مرداد</span>
+                                                <span className='text-sm'>1402</span>
+                                            </div>
+                                            <button
+                                                className='flex lg:hidden items-center rounded-md text-orange-300 bg-orange-200/20 gap-x-1.5 px-2.5'>
+                                                مطالعه
+                                                <FaChevronLeft/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                className='services relative grid grid-cols-2 md:grid-cols-4 gap-y-11 lg:gap-x-0 gap-x-2 mt-28'>
+
+                                <div className='flex items-center flex-col xl:flex-row gap-x-3.5'>
+                                    <SupportIcon className='w-[66px] h-[73px]'/>
+                                    <div className='flex flex-col gap-y-3.5 text-zinc-700 dark:text-white'>
+                                        <h4 className='text-lg'>پشتیبانی شبانه روزی</h4>
+                                        <span className='text-sm'>7 روز هفته ، 24 ساعته</span>
+                                    </div>
+                                </div>
+                                <div className='flex items-center flex-col xl:flex-row gap-x-3.5'>
+                                    <DeliveryIcon className='w-[108px] h-[73px]'/>
+                                    <div className='flex flex-col gap-y-3.5 text-zinc-700 dark:text-white'>
+                                        <h4 className='text-lg'>پشتیبانی شبانه روزی</h4>
+                                        <span className='text-sm'>7 روز هفته ، 24 ساعته</span>
+                                    </div>
+                                </div>
+                                <div className='flex items-center flex-col xl:flex-row gap-x-3.5'>
+                                    <CoffeeIcon className='w-[51px] h-[73px]'/>
+                                    <div className='flex flex-col gap-y-3.5 text-zinc-700 dark:text-white'>
+                                        <h4 className='text-lg'>پشتیبانی شبانه روزی</h4>
+                                        <span className='text-sm'>7 روز هفته ، 24 ساعته</span>
+                                    </div>
+                                </div>
+                                <div className='flex items-center flex-col xl:flex-row gap-x-3.5'>
+                                    <PitcherIcon className='w-[75px] h-[73px]'/>
+                                    <div className='flex flex-col gap-y-3.5 text-zinc-700 dark:text-white'>
+                                        <h4 className='text-lg'>پشتیبانی شبانه روزی</h4>
+                                        <span className='text-sm'>7 روز هفته ، 24 ساعته</span>
+                                    </div>
+                                </div>
+                                {/*<div className='my-lines md:hidden'></div>*/}
                             </div>
                         </section>
                     </section>

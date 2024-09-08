@@ -27,7 +27,7 @@ export default function ProductBox({product}:any) {
                         </div>
                     </> :
                     <>
-                        <span className='text-red-400 text-base lg:text-xl'>فعلا موجود نیست</span>
+                        <span className='text-red-400 text-sm xs:text-base lg:text-xl'>فعلا موجود نیست</span>
                     </>
                 }
             </div>
@@ -42,7 +42,7 @@ export default function ProductBox({product}:any) {
                 <div className='flex items-center'>
                     {[...Array(5)].map((_, i) => (
                         // for reverse show: 5-i <=
-                        <FaRegStar key={i} className={`h-4 w-4 lg:h-6 lg:w-6 cursor-pointer ${i < product.rating ? 'text-yellow-400' : 'text-gray-300 dark:text-gray-400'}`} />
+                        <FaRegStar key={i} className={`h-3 w-3 xs:h-4 xs:w-4 lg:h-6 lg:w-6 cursor-pointer ${i < product.rating ? 'text-yellow-400' : 'text-gray-300 dark:text-gray-400'}`} />
                     ))}
                 </div>
             </div>
