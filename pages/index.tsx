@@ -180,6 +180,76 @@ export default function Home({products}:any) {
                                     }
                                 </Swiper>
                             </div>
+
+
+                            <div className='grid grid-cols-1 lg:grid-cols-2 lg:flex-row justify-between items-center mt-20 px-3 lg:px-11 py-8 lg:py-6 text-white
+                            bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-2xl gap-y-2'>
+                                <div className='flex items-center justify-center gap-x-3 lg:gap-x-6 '>
+                                    <img src="/images/club/diamond.png" alt=""/>
+                                    <div className='flex flex-col gap-y-2'>
+                                        <h4 className='text-2xl/[28px] lg:text-5xl/[48px]'>کافی کلاب</h4>
+                                        <span className='text-lg lg:text-2xl/[48px]'>میدونستی میتونی با امتیاز هات قهوه بگیری ؟</span>
+                                    </div>
+                                </div>
+                                <div className='flex items-center justify-evenly lg:justify-between'>
+                                    <div className='flex gap-x-2 lg:gap-x-5 text-emerald-600'>
+                                        <span
+                                            className='flex flex-col justify-end items-center w-[72px] h-[72px] lg:w-24 lg:h-24 bg-white rounded-2xl gap-y-1.5 pb-1'>
+                                            <img src="/images/club/Discovery.svg" alt=""/>
+                                            <span className='text-xs lg:text-sm'>چرخ و بخت</span>
+                                        </span>
+                                        <span
+                                            className='flex flex-col justify-end items-center w-[72px] h-[72px] lg:w-24 lg:h-24 bg-white rounded-2xl gap-y-1.5 pb-1'>
+                                            <img src="/images/club/Activity.svg" alt=""/>
+                                            <span className='text-xs lg:text-sm'>ماموریت ها</span>
+                                        </span>
+                                        <span
+                                            className='flex flex-col justify-end items-center w-[72px] h-[72px] lg:w-24 lg:h-24 bg-white rounded-2xl gap-y-1.5 pb-1'>
+                                            <img src="/images/club/Ticket-Star.svg" alt=""/>
+                                            <span className='text-xs lg:text-sm'>جایزه ها</span>
+                                        </span>
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <span className='text-2xl/[34px] lg:text-3xl/[42px]'>542</span>
+                                        <span className='text-xs lg:text-sm mb-2'>امتیـــــــاز شما</span>
+                                        <div className='flex items-center  lg:w-28 text-xs lg:text-sm py-1 px-2.5 gap-x-1 rounded-full
+                                         bg-gradient-to-r from-orange-200 to-orange-300 text-white'>
+                                            <span>دریافت جایزه</span>
+                                            <FaChevronLeft/>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className='flex justify-between items-end mt-20 mb-5 md:mb-12'>
+                                <div className='flex flex-col justify-center gap-y-1.5'>
+                                    <h3 className='section-title'>مطالب خواندنی</h3>
+                                </div>
+                                <a href="" className='section-link'>
+                                    <span className='hidden md:flex'>مشاهده همه مطالب</span>
+                                    <span className='flex md:hidden'>مشاهده همه</span>
+                                    <MdOutlineChevronLeft className='w-5 h-5'/>
+                                </a>
+                            </div>
+                            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 md:gap-5'>
+                                <div className='flex flex-row lg:flex-col bg-white dark:bg-zinc-700 rounded-2xl shadow-normal p-2.5 gap-y-2.5 lg:gap-x-0 gap-x-3'>
+                                    <div className='flex basis-2/5 lg:basis-auto'>
+                                        <img src="/images/blogs/blog-1.png" alt="" className='rounded-xl rounded-bl-4xl'/>
+                                    </div>
+                                    <div className='flex basis-3/5 lg:basis-auto lg:flex-row flex-col justify-between items-center gap-y-[18px] gap-x-5'>
+                                        <h4 className='text-lg text-zinc-700 dark:text-white'>طرز تهیه قهوه دمی با
+                                            دستگاه اروپرس</h4>
+                                        <div className='w-full h-px lg:w-px lg:h-[90%] bg-gray-100 dark:bg-white/10'></div>
+                                        <div className='flex flex-row lg:flex-col items-center text-teal-600 dark:text-emerald-500'>
+                                            <span className='text-2xl'>21</span>
+                                            <span className='text-sm'>مرداد</span>
+                                            <span className='text-sm'>1402</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                     </section>
                 </main>
