@@ -1,6 +1,7 @@
 // pages/api/products/create.ts
 import connectToDB from "@/configs/db";
 import Product from "@/models/Product";
+import Category from "@/models/Category";
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
@@ -11,13 +12,19 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     try {
         await connectToDB();
 
-        const { name, image, originalPrice, discount, count, rating, salesCount, createdAt } = req.body;
+        const { name, image, originalPrice, discount, count, rating, salesCount, category } = req.body;
 
         // Validation
-        if (!name || !image || !originalPrice) {
-            console.error('Required fields are missing:', req.body);
+        if (!name || !image || !originalPrice || !category) {
             return res.status(422).json({ message: 'Required fields are missing' });
         }
+
+        // Check if the category exists
+        const categoryExists = await Category.findById(category);
+        if (!categoryExists) {
+            return res.status(404).json({ message: 'Category not found' });
+        }
+
         const finalPrice = originalPrice - (originalPrice * (discount || 0) / 100);
 
         const newProduct = new Product({
@@ -29,7 +36,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             count,
             rating,
             salesCount,
-            createdAt,
+            category,  // ذخیره‌سازی آی‌دی دسته‌بندی
         });
 
         const savedProduct = await newProduct.save();

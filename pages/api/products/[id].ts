@@ -1,3 +1,4 @@
+// pages/api/products/[id].ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 import connectToDB from '@/configs/db';
 import Product from '@/models/Product';
@@ -8,7 +9,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const { id } = req.query;
 
     try {
-        const product = await Product.findById(id);
+        const product = await Product.findById(id).populate('category'); // اضافه کردن populate
 
         if (!product) {
             return res.status(404).json({ message: 'Product not found' });
